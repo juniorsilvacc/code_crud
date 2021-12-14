@@ -13,7 +13,7 @@ import { Category } from './Category';
 @Entity('movies')
 class Movies {
   @PrimaryColumn()
-  id: string;
+  id?: string;
 
   @Column()
   name: string;
