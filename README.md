@@ -7,7 +7,7 @@
 - Deletar categoria
 - Atualizar categoria
 - Criar filme
-- Listar todos os filmes
+- Listar todos os filmes por categoria
 
 ### Tecnologias utilizadas.
 
