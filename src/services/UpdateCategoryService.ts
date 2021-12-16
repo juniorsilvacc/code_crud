@@ -19,6 +19,7 @@ class UpdateCategoryService {
     }
 
     category.name = name || category.name;
+
     category.description = description || category.description;
 
     await repo.save(category);

@@ -10,8 +10,11 @@ class CreateMovieController {
 
     const result = await service.execute({
       name,
+
       description,
+
       duration,
+
       category_id,
     });
 

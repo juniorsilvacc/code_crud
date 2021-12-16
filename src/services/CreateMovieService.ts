@@ -5,19 +5,26 @@ import { Movies } from '../entities/Movies';
 
 interface IRequest {
   name: string;
+
   description: string;
+
   duration: number;
+
   category_id: string;
 }
 
 class CreateMovieService {
   async execute({
     name,
+
     description,
+
     duration,
+
     category_id,
   }: IRequest): Promise<Movies | Error> {
     const repo = getRepository(Movies);
+
     const repoCategory = getRepository(Category);
 
     if (!(await repoCategory.findOne(category_id))) {
